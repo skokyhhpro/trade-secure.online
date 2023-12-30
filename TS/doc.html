@@ -1,0 +1,33 @@
+var one = 
+['Abashed',
+'Abhorrent',
+'Party',
+'Zing',
+'Zip',
+'Zippy'];
+
+var two =
+['Account',
+'Wives',
+'Wills',
+'Wins',
+'Wounds',
+'Wrecks',
+'Wrists',
+'Writings',
+'Wrongs',
+'Years',
+'Yellows',
+'Young',
+'Youths',
+'Zings',
+'Zips'];
+
+function getRandom(randArray){
+ return Math.floor(Math.random() * randArray.length);
+}
+function showrandom() {
+  document.getElementById('random').innerHTML = one[getRandom(one)] + ' ' + two[getRandom(two)];
+}
+
+showrandom();

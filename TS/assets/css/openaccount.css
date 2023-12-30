@@ -1,0 +1,83 @@
+.OpenAccountForm {
+	position:relative;
+}
+.OPErrMes{
+	position:absolute;
+	bottom: 0;
+	margin-top: -20px;
+	background-color: rgba(0,0,0,0.5);
+/*	border:1px solid #ffae00;*/
+	color:#ff8989;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight: normal;
+	line-height: 14px;
+	padding: 3px 5px;
+	text-align: center;
+	display: none;
+}
+
+#formSidebar .OPErrMes, #openAccountForm .OPErrMes {
+    margin-top: 50px;
+}
+
+#formSidebar .check-box .OPErrMes {
+	margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+    .OPErrMes{
+        margin-top: 50px;
+    }
+    .check-box .OPErrMes{
+    	margin-top: 15px;
+    }
+}
+.OPErrMes:after, .OPErrMes:before {
+/*	content: " ";*/
+	top: 100%;
+	left: 20%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.OPErrMes:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #000;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.OPErrMes:before {
+	border-color: rgba(255, 174, 0, 0);
+	border-top-color: #ffae00;
+	border-width: 6px;
+	margin-left: -6px;
+}
+.openacc_x {
+	background-image:url('../../wp-content/themes/toroption/img/error_icon.html');
+	background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+	padding-right:30px;
+}
+.openacc_check {
+	background-image:url('../../wp-content/themes/toroption/img/check_icon.html');
+	background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+	padding-right:30px;
+}
+@media screen and (max-width: 1000px) {
+	.OPErrMes {
+		bottom: auto;
+	}
+}
+@media (max-width: 992px) {
+	.OpenAccountForm.form_fields  input.form-control-ac , 
+	.OpenAccountForm.form_fields  select.form-control-ac  {
+		font-size:16px;
+	}
+}

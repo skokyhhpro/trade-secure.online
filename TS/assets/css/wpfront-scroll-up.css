@@ -1,0 +1,8 @@
+#wpfront-scroll-top-container {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+	bottom:40px !important;
+
+}
